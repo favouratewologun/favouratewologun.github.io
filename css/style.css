@@ -1,1 +1,21 @@
+:root {
+  --purple: #A259FF;
+  --purple-light: #EAE6FF;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--purple-light);
+  color: #111;
+}
+
+h1 {
+  color: var(--purple);
+}
+
+main {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 24px;
+  background: white;
+}
