@@ -1,21 +1,146 @@
 :root {
   --purple: #A259FF;
   --purple-light: #EAE6FF;
+  --purple-soft: #F5F0FF;
+  --gray: #555;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--purple-light);
+  background: linear-gradient(180deg, var(--purple-light), #F8E8FF);
+  background-attachment: fixed;
   color: #111;
+  margin: 0;
+  line-height: 1.5;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 0 2px 10px rgba(162, 89, 255, 0.2);
+}
+
+nav a {
+  display: inline-block;
+  margin: 2px 4px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: var(--purple);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: var(--purple);
+  color: white;
 }
 
 h1 {
   color: var(--purple);
+  font-size: 2.2em;
+  margin-top: 0;
+}
+
+h2 {
+  color: var(--purple);
+  border-bottom: 2px dashed var(--purple-light);
+  padding-bottom: 4px;
+}
+
+h2::before {
+  content: "♡ ";
+}
+
+h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+a {
+  color: var(--purple);
 }
 
 main {
-  max-width: 600px;
-  margin: 80px auto;
-  padding: 24px;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px;
   background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(162, 89, 255, 0.15);
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+.item {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: var(--purple-soft);
+  border-left: 4px solid var(--purple);
+  border-radius: 12px;
+}
+
+.item-head {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.date {
+  color: var(--purple);
+  font-size: 0.85em;
+  background: white;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+.role {
+  font-style: italic;
+  margin: 2px 0;
+}
+
+li::marker {
+  color: var(--purple);
+}
+
+.links a {
+  display: inline-block;
+  background: var(--purple);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links a:hover {
+  background: #8a3ff0;
+}
+
+footer {
+  text-align: center;
+  color: var(--purple);
+  padding-bottom: 30px;
+}
+
+/* phones */
+@media (max-width: 600px) {
+  main {
+    margin: 16px;
+    padding: 18px;
+  }
+  nav a {
+    padding: 4px 8px;
+    font-size: 0.9em;
+  }
 }

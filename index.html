@@ -10,13 +10,156 @@
 </head>
 <body>
 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#awards">Awards</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <main class="container">
-    <h1>Hello! </h1>
-    <p>Favour is a junior Computer Science Student at Columbia University. See her classes, projects, and resume.</p>
-    <h3>Contact Info </h3>
-    <p>Email, linkedin, github. </p>
-    
+
+    <!-- intro -->
+    <section id="about">
+      <h1>Hello! I'm Favour 💜</h1>
+      <p>I'm a junior studying Computer Science (minor in Economics) at Columbia University, graduating in May 2028.
+        I like building things that actually help people, from a peer-support platform for kids with chronic illnesses
+        to a travel app for Black travellers. I'm also doing robotics research in the Creative Machines Lab, I'm a head TA
+        for Intro to Computing, and I'm a member of Tau Beta Pi and Upsilon Pi Epsilon. When I'm not coding I'm usually
+        cooking, reading, travelling, or at the theatre.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-head">
+          <h3>Columbia University, School of Engineering and Applied Science</h3>
+          <span class="date">Expected May 2028</span>
+        </div>
+        <p>B.S. Computer Science, Minor in Economics | GPA: 4.08</p>
+        <p><b>Classes:</b> Advanced Programming, Data Structures, Computer Science Theory (in progress), Databases (in progress)</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>Immersive Black Experience Travel App (IBETA)</h3>
+          <span class="date">Jun 2026 - Present</span>
+        </div>
+        <p class="role">Frontend &amp; Product Systems Engineering Intern</p>
+        <ul>
+          <li>Set up the React Native app foundation with Expo Router, including the project structure and navigation</li>
+          <li>Built 10+ reusable React Native components used across 20+ screens</li>
+          <li>Wrote frontend service modules and API interfaces for the core features so the app is ready for the backend</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>Talk With Someone Like You</h3>
+          <span class="date">Oct 2025 - Present</span>
+        </div>
+        <p class="role">Backend Engineer Intern</p>
+        <ul>
+          <li>Built and tested reusable Firestore helper functions in JavaScript/Node.js for peer-support matching</li>
+          <li>Implemented Firebase Authentication and user provisioning logic that prevents duplicate user records</li>
+          <li>Designed and extended the Firestore data models for users, pairs, and messages</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>Hashfire</h3>
+          <span class="date">Dec 2024 - Jan 2025, Jun - Jul 2025</span>
+        </div>
+        <p class="role">Full Stack Developer Intern</p>
+        <ul>
+          <li>Integrated LinkedIn OAuth with Node.js, Express, and React, cutting onboarding time by 50% by auto-filling profiles</li>
+          <li>Fixed authentication and session management bugs across React and Node.js so login and sessions work reliably</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="item">
+        <div class="item-head">
+          <h3>Creative Machines Lab, Columbia University</h3>
+          <span class="date">2026 - Present</span>
+        </div>
+        <ul>
+          <li>Training reinforcement learning policies for a simulated robotic foosball table in NVIDIA Isaac Lab</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="item">
+        <div class="item-head">
+          <h3><a href="https://github.com/favouratewologun/DistractedDrivingMachineLearningProject" target="_blank">Distracted Driving Detection (ML)</a></h3>
+          <span class="date">Aug 2023</span>
+        </div>
+        <ul>
+          <li>Deep learning classifier in Python + TensorFlow that detects distracted driving from 8,000 images using transfer learning</li>
+          <li>Got accuracy up to 76% with hyperparameter tuning and model optimization</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>STEM Fellowship Big Data Challenge, Research Author</h3>
+          <span class="date">2022 - 2024</span>
+        </div>
+        <ul>
+          <li>Cleaned and analyzed real-world datasets in Python (Pandas, Matplotlib) on trends tied to the UN Sustainable Development Goals</li>
+          <li>Published and presented to industry professionals three years in a row:
+            <a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj0802" target="_blank">2022</a>,
+            <a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj0901" target="_blank">2023</a>,
+            <a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj1001" target="_blank">2024</a></li>
+          <li>Finalist all three years out of 100+ submissions, won the Let's Talk Science Analytics Award (2023) and Entrepreneurial Thinking Award (2022)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p><b>Languages:</b> Java, Python, TypeScript, JavaScript, C++, C, HTML/CSS</p>
+      <p><b>Frameworks &amp; tools:</b> React, React Native, Expo, Node.js, Express, Firebase (Firestore), Git, REST APIs, OAuth 2.0, TensorFlow</p>
+    </section>
+
+    <section id="awards">
+      <h2>Awards &amp; Involvement</h2>
+      <ul>
+        <li><b>Tau Beta Pi</b> (engineering honor society)</li>
+        <li><b>Upsilon Pi Epsilon</b> (computing honor society)</li>
+        <li><b>Dean's List</b> (2024-26)</li>
+        <li><b>Governor General's Academic Medal</b> (2024): highest academic average in my graduating class</li>
+        <li><b>Head Teaching Assistant, Intro to Computing:</b> I run review sessions before every quiz and hold office hours for 200+ students a semester. With the other head TA, I organize the TA team for grading, and we review every homework and quiz before it goes out to students</li>
+        <li><b>Diversity &amp; Inclusion Lead, Women in Computer Science:</b> I organize monthly professional development and community events for 30+ students each</li>
+        <li><b>Logistics Team, DivHacks:</b> coordinated operations for 350+ participants</li>
+        <li><b>VP of Finance, Hall Council:</b> managed budgets and event funding for 600+ residents</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Info</h2>
+      <p class="links">
+        <a href="mailto:favouratewologun1@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/favour-atewologun" target="_blank">LinkedIn</a>
+        <a href="https://github.com/favouratewologun" target="_blank">GitHub</a>
+      </p>
+    </section>
+
   </main>
+
+  <footer>Made by Favour <span id="year"></span></footer>
 
   <!-- JS -->
   <script src="js/main.js"></script>
