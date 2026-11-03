@@ -205,7 +205,7 @@ figcaption {
 /* personal section */
 .fun {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
 
@@ -243,6 +243,9 @@ footer {
   }
   .videos {
     grid-template-columns: 1fr;
+  }
+  .fun {
+    grid-template-columns: 1fr 1fr;
   }
   .intro {
     flex-direction: column;
