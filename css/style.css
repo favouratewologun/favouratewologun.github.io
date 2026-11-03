@@ -104,6 +104,13 @@ section {
   border-radius: 20px;
 }
 
+.note {
+  font-size: 0.85em;
+  color: var(--gray);
+  font-style: italic;
+  margin: 0;
+}
+
 .role {
   font-style: italic;
   margin: 2px 0;
