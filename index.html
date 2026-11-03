@@ -4,6 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Favour Atewologun</title>
+  <meta name="description" content="Computer Science student at Columbia University. Software engineering, robotics research, and Head TA." />
+
+  <!-- link preview (LinkedIn, iMessage, etc.) -->
+  <meta property="og:title" content="Favour Atewologun" />
+  <meta property="og:description" content="Computer Science @ Columbia University. Software engineering, robotics research, and Head TA." />
+  <meta property="og:image" content="https://favouratewologun.github.io/images/preview.png" />
+  <meta property="og:url" content="https://favouratewologun.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
@@ -16,6 +30,7 @@
     <a href="#research">Research</a>
     <a href="#projects">Projects</a>
     <a href="#awards">Awards</a>
+    <a href="#me">Fun</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -27,8 +42,12 @@
       <p>I'm a junior studying Computer Science (minor in Economics) at Columbia University, graduating in May 2028.
         I like building things that actually help people, from a peer-support platform for kids with chronic illnesses
         to a travel app for Black travellers. I'm also doing robotics research in the Creative Machines Lab, I'm a head TA
-        for Intro to Computing, and I'm a member of Tau Beta Pi and Upsilon Pi Epsilon. When I'm not coding I'm usually
-        cooking, reading, travelling, or at the theatre.</p>
+        for Intro to Computing, and I'm a member of Tau Beta Pi and Upsilon Pi Epsilon.</p>
+
+      <p class="currently"><b>Currently:</b> training a robot foosball player with reinforcement learning, building IBETA's
+        app, head TA-ing Intro to Computing, and taking CS Theory and Databases.</p>
+
+      <a class="button" href="files/Favour_Atewologun_Resume.pdf" target="_blank">Download my resume</a>
     </section>
 
     <section id="education">
@@ -38,9 +57,15 @@
           <h3>Columbia University, School of Engineering and Applied Science</h3>
           <span class="date">Expected May 2028</span>
         </div>
-        <p>B.S. Computer Science, Minor in Economics | GPA: 4.08</p>
-        <p><b>Classes:</b> Advanced Programming, Data Structures, Computer Science Theory (in progress), Databases (in progress)</p>
+        <p>B.S. Computer Science, Minor in Economics | GPA: 4.08 | Dean's List every semester</p>
       </div>
+
+      <h3 class="subhead">Classes I've taken</h3>
+      <p><b>Computer Science:</b> Intro to Computing in Python, Data Structures in Java, Discrete Math, Advanced Programming,
+        Fundamentals of Computer Systems, Artificial Intelligence</p>
+      <p><b>Math &amp; Stats:</b> Multivariable Calculus, Linear Algebra, Probability for Engineers</p>
+      <p><b>Economics:</b> Intermediate Microeconomics, Intermediate Macroeconomics</p>
+      <p><b>This semester:</b> Computer Science Theory, Intro to Databases, Statistics &amp; Data Analysis, Financial Economics</p>
     </section>
 
     <section id="experience">
@@ -93,8 +118,19 @@
           <span class="date">2026 - Present</span>
         </div>
         <ul>
-          <li>Training reinforcement learning policies for a simulated robotic foosball table in NVIDIA Isaac Lab</li>
+          <li>Training policies for a simulated robotic foosball table in NVIDIA Isaac Lab, competing in the lab's round robin tournament</li>
+          <li>Trained my first policy with PPO, then improved it with evolution strategies: the new policy scores 58% of the goals when it plays my PPO one</li>
         </ul>
+        <div class="videos">
+          <figure>
+            <video src="videos/foosball_es_vs_ppo.mp4" controls muted loop playsinline preload="metadata"></video>
+            <figcaption>My evolution strategies policy (white) vs my PPO policy (black)</figcaption>
+          </figure>
+          <figure>
+            <video src="videos/foosball_es_vs_baseline.mp4" controls muted loop playsinline preload="metadata"></video>
+            <figcaption>The same policy against the lab's baseline opponent</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -131,7 +167,7 @@
     <section id="skills">
       <h2>Skills</h2>
       <p><b>Languages:</b> Java, Python, TypeScript, JavaScript, C++, C, HTML/CSS</p>
-      <p><b>Frameworks &amp; tools:</b> React, React Native, Expo, Node.js, Express, Firebase (Firestore), Git, REST APIs, OAuth 2.0, TensorFlow</p>
+      <p><b>Frameworks &amp; tools:</b> React, React Native, Expo, Node.js, Express, Firebase (Firestore), Git, REST APIs, OAuth 2.0, TensorFlow, PyTorch, Isaac Lab</p>
     </section>
 
     <section id="awards">
@@ -139,7 +175,7 @@
       <ul>
         <li><b>Tau Beta Pi</b> (engineering honor society)</li>
         <li><b>Upsilon Pi Epsilon</b> (computing honor society)</li>
-        <li><b>Dean's List</b> (2024-26)</li>
+        <li><b>Dean's List</b> (every semester, 2024-26)</li>
         <li><b>Governor General's Academic Medal</b> (2024): highest academic average in my graduating class</li>
         <li><b>Head Teaching Assistant, Intro to Computing:</b> I run review sessions before every quiz and hold office hours for 200+ students a semester. With the other head TA, I organize the TA team for grading, and we review every homework and quiz before it goes out to students</li>
         <li><b>Diversity &amp; Inclusion Lead, Women in Computer Science:</b> I organize monthly professional development and community events for 30+ students each</li>
@@ -148,12 +184,24 @@
       </ul>
     </section>
 
+    <section id="me">
+      <h2>When I'm not coding</h2>
+      <div class="fun">
+        <div class="fun-card"><span>✈️</span><p><b>Travelling</b><br />always planning the next trip</p></div>
+        <div class="fun-card"><span>🍳</span><p><b>Cooking</b><br />trying new recipes on my friends</p></div>
+        <div class="fun-card"><span>📚</span><p><b>Reading</b><br />always have a book going</p></div>
+        <div class="fun-card"><span>🎭</span><p><b>Theatre</b><br />watching shows (and being in them)</p></div>
+        <div class="fun-card"><span>🗣️</span><p><b>Yoruba</b><br />learning the language of my roots</p></div>
+      </div>
+    </section>
+
     <section id="contact">
       <h2>Contact Info</h2>
       <p class="links">
         <a href="mailto:favouratewologun1@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/favour-atewologun" target="_blank">LinkedIn</a>
         <a href="https://github.com/favouratewologun" target="_blank">GitHub</a>
+        <a href="files/Favour_Atewologun_Resume.pdf" target="_blank">Resume</a>
       </p>
     </section>
 
